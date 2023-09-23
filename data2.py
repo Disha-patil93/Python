@@ -1,17 +1,9 @@
-import pandas as pd
 
-s1=pd.Series([1,2,3])
-s2=pd.Series([20,45,67])
-s3=pd.Series(['tara','sara','sanggu'])
-d={"rollno":s1,"marks":s2,"names":s3,}
-d2=pd.DataFrame(d)
-#print(d)
-print("after dataframes")
-print(d2)
-d3=d2.drop(2)
-print(d3)
+num1 = 1.5
+num2 = 6.3
 
-d4=d2.drop("marks",axis=1)
-print(d4)
-gk=d2.groupby("rollno").head()
-print(gk)
+# Add two numbers
+sum = num1 + num2
+
+# Display the sum
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
